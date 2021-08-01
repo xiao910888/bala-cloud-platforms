@@ -15,7 +15,7 @@
         <el-main>
           <!--路由占位符-->
           <router-view/>
-          <div class="copyright">Copyright</div>
+          <div class="copyright">Copyright © 2021 hello happy Incorporated. All rights reserved.</div>
         </el-main>
       </el-container>
     </el-container>

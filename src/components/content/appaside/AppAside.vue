@@ -178,6 +178,7 @@
 <style scoped>
   .el-menu{
     border-right: none;
+    border-right: 1px solid rgba(100,100,100,.1);
   }
   .el-menu i{
     padding: 3px;

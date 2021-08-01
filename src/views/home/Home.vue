@@ -1,13 +1,13 @@
 <template>
   <el-row :gutter="10" justify="space-between">
-    <el-col :span="18" :xs="24">
+    <el-col :lg="18" :md="24">
       <el-row :gutter="10" justify="space-between">
-        <el-col :span="8" :xs="24">
+        <el-col :lg="8" :md="8" :sm="12" :xs="24">
           <Welcome class="grid-content row1-1"/>
         </el-col>
-        <el-col :span="16" :xs="24">
+        <el-col :lg="16" :md="16" :sm="12" :xs="24">
           <el-row :gutter="10" justify="space-between">
-            <el-col :span="12">
+            <el-col :lg="12" :md="12">
               <leftover class="grid-content row1-2"
                         title="账户余额"
                         :num="accountLeft"
@@ -16,7 +16,7 @@
                         @leftClick="accountInRecord"
                         @rightClick="accountOutRecord"/>
             </el-col>
-            <el-col :span="12">
+            <el-col :lg="12" :md="12">
               <leftover class="grid-content row1-2"
                         title="剩余码量"
                         :num="codeNum"
@@ -36,7 +36,7 @@
         </el-col>
       </el-row>
     </el-col>
-    <el-col :span="6" :xs="24">
+    <el-col :lg="6" :md="12" :xs="24">
       <el-row :gutter="10" justify="space-between">
         <el-col ><button class="button row1-2-1_4">企业型入口</button></el-col>
         <el-col ><home-todo class="grid-content row1-2-3_4"/></el-col>

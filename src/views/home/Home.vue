@@ -2,10 +2,10 @@
   <el-row :gutter="10" justify="space-between">
     <el-col :span="18" :xs="24">
       <el-row :gutter="10" justify="space-between">
-        <el-col :span="8">
+        <el-col :span="8" :xs="24">
           <Welcome class="grid-content row1-1"/>
         </el-col>
-        <el-col :span="16">
+        <el-col :span="16" :xs="24">
           <el-row :gutter="10" justify="space-between">
             <el-col :span="12">
               <leftover class="grid-content row1-2"
@@ -31,15 +31,17 @@
         </el-col>
       </el-row>
       <el-row>
+        <el-col>
         <home-chart class="grid-content row3-1"/>
+        </el-col>
       </el-row>
     </el-col>
-    <el-col :span="6">
+    <el-col :span="6" :xs="24">
       <el-row :gutter="10" justify="space-between">
         <el-col ><button class="button row1-2-1_4">企业型入口</button></el-col>
-        <el-col ><div class="grid-content row1-2-3_4">22</div></el-col>
-        <el-col ><div class="grid-content row2-2">22</div></el-col>
-        <el-col ><div class="grid-content row3-1">22</div></el-col>
+        <el-col ><home-todo class="grid-content row1-2-3_4"/></el-col>
+        <el-col ><home-entrance class="grid-content row2-2"/></el-col>
+        <el-col ><home-ranking class="grid-content row3-1"/></el-col>
       </el-row>
     </el-col>
   </el-row>
@@ -51,6 +53,9 @@
   import NumTable from "./child/NumTable";
   import DemoChart from "components/content/chart/DemoChart";
   import HomeChart from "./child/HomeChart";
+  import HomeTodo from "./child/HomeTodo";
+  import HomeEntrance from "./child/HomeEntrance";
+  import HomeRanking from "./child/HomeRanking";
   export default {
     name: "Home",
     components:{
@@ -58,7 +63,10 @@
       Welcome,
       Leftover,
       NumTable,
-      DemoChart
+      DemoChart,
+      HomeTodo,
+      HomeEntrance,
+      HomeRanking
     },
     data(){
       return{
@@ -95,9 +103,9 @@
   .el-col {
     border-radius: 4px;
     margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    /*&:last-child {*/
+    /*  margin-bottom: 0;*/
+    /*}*/
   }
   .grid-content {
     border-radius: 4px;
@@ -113,16 +121,16 @@
     font-size: 14px;
   }
   .row1-1{
-    height: 320px;
+    height: 330px;
   }
   .row1-2{
-    height: 120px;
+    height: 130px;
   }
   .row1-2-1_4{
     height: 30px;
   }
   .row1-2-3_4{
-    height: 80px;
+    height: 90px;
   }
   .row2-2{
     height: 190px;

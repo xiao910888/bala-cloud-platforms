@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "9617943",
+      "name": "奖牌2",
+      "font_class": "jiangpai2",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "9617944",
+      "name": "奖牌3",
+      "font_class": "jiangpai3",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "19432476",
+      "name": "奖牌1",
+      "font_class": "jiangpai1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
       "icon_id": "18866266",
       "name": "全屏",
       "font_class": "quanping",

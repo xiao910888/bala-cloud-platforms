@@ -3,8 +3,8 @@
     <table rules="cols">
       <td v-for="item in info">
         <div v-for="i in item" >
-          <tr class="num">{{i.num}}</tr>
-          <tr class="title">{{i.title}}</tr>
+          <tr class="home-table-num">{{i.num}}</tr>
+          <tr class="homt-table-text">{{i.title}}</tr>
         </div>
       </td>
     </table>
@@ -39,11 +39,5 @@
     height: 40px;
     line-height: 40px;
   }
-  .num{
-    font-size: 21px;
-    color: #000;
-  }
-  .title{
 
-  }
 </style>

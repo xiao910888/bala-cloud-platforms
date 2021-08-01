@@ -39,6 +39,9 @@
   }
   .left{
     width: 200px;
+    span{
+      width:160px
+    }
   }
   div {
     display: flex;
@@ -55,6 +58,9 @@
     flex: 1;
     >i{
       margin: 0 20px;
+    }
+    >span{
+      width: 60px;
     }
   }
   .right{

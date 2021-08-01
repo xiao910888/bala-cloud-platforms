@@ -40,7 +40,9 @@
   .left{
     width: 200px;
     span{
-      width:160px
+      width:160px;
+      font-size: 17px;
+      font-weight: 700;
     }
   }
   div {
